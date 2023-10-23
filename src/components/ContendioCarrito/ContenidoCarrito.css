@@ -1,0 +1,53 @@
+.DivContenidoCarrito {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.ListaCarrito {
+  list-style: none;
+  padding: 0;
+}
+
+.ItemCarrito {
+  display: flex;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ImagenCarrito {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.InfoProducto {
+  flex: 1;
+}
+
+p {
+  margin: 0;
+}
+
+.BotonEliminar {
+  background-color: #ff3333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.BotonEliminar:hover {
+  background-color: #ff0000;
+}

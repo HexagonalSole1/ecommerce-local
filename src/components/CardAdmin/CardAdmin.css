@@ -1,0 +1,43 @@
+.DivCard {
+  display: flex;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.DivImagen img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.DivInfo {
+  flex: 1;
+  padding: 10px;
+}
+
+.DivBoton {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 30px;
+  
+}
+
+button {
+  margin: 5px 0;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.DivBoton button{
+  margin: 5px;
+}

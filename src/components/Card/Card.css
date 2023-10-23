@@ -1,0 +1,56 @@
+.DivCard {
+  height: 25rem;
+  width: 15rem;
+  background-color: #f0f0f0; /* Light gray background */
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.DivImagen {
+  background-color: #fff; /* White background for the image */
+  height: 12rem;
+  margin: 1rem;
+  border-radius: 10px;
+  overflow: hidden; /* Hide image overflow */
+}
+
+.DivInfo {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: start;
+  margin: 1rem;
+  gap: 10px;
+}
+
+.DivBoton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.boton-bonito {
+  display: inline-block;
+  background-color: #3498db; /* Blue background */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.boton-bonito:hover {
+  background-color: #258cd1; /* Slightly darker blue on hover */
+  transform: scale(1.05); /* Slightly bigger on hover */
+}
+
+.boton-bonito:disabled {
+  background-color: #ccc; /* Grayed out when disabled */
+  cursor: not-allowed;
+}

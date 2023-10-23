@@ -1,0 +1,60 @@
+.DivNav {
+    width: 100%;
+    min-height: 5rem;
+    height: 5rem;
+    background-color: #f5f5f5; /* Light gray background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-bottom: 2px solid #3498db; /* Blue border at the bottom */
+  }
+  
+  .DivLogo {
+    display: flex;
+    height: 100%;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000; /* Blue logo text */
+  }
+  
+  .DivOpciones {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .DivOpciones div {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .DivOpciones a {
+    color: #131414; /* Blue link text */
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .DivOpciones a:hover {
+    color: #258cd1; /* Slightly darker blue on hover */
+  }
+  
+  /* Nav.module.css */
+.Circulo {
+  background-color: #4CAF50; /* Color verde */
+  color: white; /* Color del texto */
+  border-radius: 50%; /* Hace que el elemento sea circular */
+  padding: 5px 5px; /* Espaciado interno para el texto */
+  font-size: 16px; /* Tamaño del texto */
+  height: 5px;
+  width: 5px;
+}

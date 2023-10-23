@@ -1,0 +1,20 @@
+.DivProductos {
+  margin: 4rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  min-height: 70vh;
+  height: auto;
+  gap: 2rem;
+  padding: 20px;
+  background-color: #ffffff; /* Light gray background */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+.NoProductosMessage {
+  font-size: 20px;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
