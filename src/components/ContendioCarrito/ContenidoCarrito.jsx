@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { EcommerceContext } from '../../Context/EcommerceContext';
-import "./ContenidoCarrito.css"
+import './ContenidoCarrito.css';
 
 function ContenidoCarrito() {
   const { allCarrito, removeProductFromCarrito, setAllProducts } = useContext(EcommerceContext);
@@ -14,9 +14,7 @@ function ContenidoCarrito() {
   const handleRemoveFromCarrito = (id) => {
     removeProductFromCarrito(id);
 
-    // Actualiza la lista de productos en la tienda cuando se quita un producto del carrito
-    const updatedProducts = allCarrito.filter((producto) => producto.id !== id);
-    setAllProducts(updatedProducts);
+    // No actualices la lista de productos en la tienda aquí
   };
 
   const handleEditCantidad = (id, newCantidad) => {
@@ -30,15 +28,6 @@ function ContenidoCarrito() {
       });
       setAllProducts(updatedCarrito);
 
-      // Actualiza la lista de productos en la tienda con la cantidad modificada
-      const updatedProducts = allCarrito.map((producto) => {
-        if (producto.id === id) {
-          return { ...producto, cantidad: newCantidad };
-        }
-        return producto;
-      });
-      setAllProducts(updatedProducts);
-      
       // Limpia la edición una vez que se ha guardado
       setEditedProduct(null);
     }
@@ -77,7 +66,7 @@ function ContenidoCarrito() {
                   Editar
                 </button>
                 {editedProduct && editedProduct.id === producto.id && (
-                  <button onClick={() => handleEditCantidad(editedProduct.id, editedProduct.cantidad)} className="BotonGuardar">
+                  <button onClick={() => handleEditCantidad(producto.id, editedProduct.cantidad)} className="BotonGuardar">
                     Guardar
                   </button>
                 )}
